@@ -35,6 +35,7 @@ public class TestList {
       */
 
       test02();
+      test03();
     }
 
     public static void test01(){
@@ -42,6 +43,7 @@ public class TestList {
     }
 
     public static void test02(){
+        /*
         List<String> list01=new ArrayList<>();
         list01.add("aaa");
         list01.add("bbb");
@@ -61,5 +63,36 @@ public class TestList {
         System.out.println(list01);
 
         System.out.println(list01.containsAll(list02)); //list01里是否包含list02里的所有元素
+        */
     }
+    public static void test03(){
+        List<String> list=new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        System.out.println(list);
+
+        list.add(0,"E"); //在零的位置插入E
+        System.out.println(list);
+
+        list.remove(0);
+        System.out.println(list);
+
+        list.set(2,"gao"); //把该位置的字符替换成gao
+        System.out.println(list);
+
+        System.out.println(list.get(2)); //返回该位置的数据
+
+        list.add("A");
+        list.add("D");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        System.out.println(list);
+
+        System.out.println(list.indexOf("B")); //返回查找的元素第一次出现的位置，如果没有该元素则返回-1
+        System.out.println(list.lastIndexOf("B")); //返回查找的元素最后一次出现的位置
+    }
+
 }
