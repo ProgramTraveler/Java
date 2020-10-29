@@ -2,13 +2,14 @@ package SecondQuestion;
 
 public class Screen {
     public static void main(String[] arge){
-        Charges a1=new Charges();
-        a1.cinema(0,false);
 
-        Charges a2=new Charges();
-        a2.taxi(8);
+        Cinema c1=new Cinema(0,false);
+        Parking p1=new Parking(16);
+        Taxi t1=new Taxi(8);
 
-        Charges a3=new Charges();
-        a3.parking(16);
+        c1.pay();
+        p1.pay();
+        t1.pay();
+
     }
 }
